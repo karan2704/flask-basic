@@ -1,0 +1,10 @@
+{% block head %}
+<title>Update Task</title>
+{% endblock %}
+
+{% block body %}
+<form action="/update/{{task.id}}" method='POST'>
+    <input id="content" name="content" value="{{task.content}}">
+    <input type="submit" value="Update">
+</form>
+{% endblock %}
